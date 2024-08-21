@@ -1,0 +1,373 @@
+@import "global";
+
+section.hero {
+    .heroContent {
+        background-image: url('../images/home-hero.jpg');
+        background-position: 55% 29%;
+        height: 45vw;
+        .redContent {
+                max-width: 500px;
+        }
+        @media only screen and (max-width:767px) {
+            height: 35vw;
+            background-position: 100% 29%;
+            background-size: 100%;
+        }
+    }
+}
+
+.whoWeAre {
+  .padTop {
+    padding-top: 15%;
+    @media only screen and (max-width:767px) {
+      padding-top: 0px;
+    }
+  }
+    h2 {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .whiteBlock {
+        box-shadow:none;
+        background-color: transparent;
+        padding:0;
+        @media only screen and (max-width:767px) {
+            box-shadow: $shadow;
+            background-color: #fff;
+            padding: 20px;
+        }
+    }
+    .whiteBlock-alt {
+        box-sizing:border-box;
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        box-shadow: $shadow;
+        border-radius: 20px;
+        @media only screen and (max-width:767px) {
+            display: none;
+        }
+    }
+    .breakCont {
+        padding: 40px 0 40px 40px;
+        position: relative;
+        @media only screen and (max-width:767px) {
+            padding:0;
+            text-align: center;
+        }
+        .col-md-7 {
+            padding-right: 40px;
+        }
+        .imgCrop {
+            max-width:600px;
+            width:100%;
+            height: 500px;
+            background: url('../images/tech-girl-alt.jpg') black no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: 58% 29%;
+            border-radius: 10px;
+            @media only screen and (max-width:992px) {
+                background-position: 70% 29%;
+            }
+            @media only screen and (max-width:767px) {
+                height: 35vw;
+            }
+        }
+        .stats {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .singleStat {
+                display: inline-block;
+                margin-right: 30px;
+                text-align: center;
+                @media only screen and (max-width:1090px) {
+                    margin-right: 15px;
+                }
+                @media only screen and (max-width:767px) {
+                    width: 32%;
+                    margin-right: 0;
+                    vertical-align: top;
+                }
+                @media only screen and (max-width:600px) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                }
+            }
+            h2 {
+                font-weight: bold;
+                margin-bottom: 0;
+                margin-top: 0;
+                @media only screen and (max-width:600px) {
+                    font-size: 2.75rem;
+                }
+            }
+            p {
+                @media only screen and (max-width:1090px) {
+                font-size: 1rem;
+                }
+                @media screen and (max-width: 767px){
+                    font-size: 1.1rem;
+                    line-height: 1.6rem;
+                }
+            }
+            .line {
+                width: 55px;
+                height: 3px;
+                background-color: $cavistaRed;
+                margin: 10px auto;
+            }
+        }
+    }
+    .redSquare {
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+        &.topR {
+            right: 35px;
+        }
+    }
+}
+
+section.services {
+    .col-spacing {
+        margin: 40px auto;
+        a {
+            display: none;
+        }
+        @media only screen and (max-width:767px) {
+            text-align: center;
+            margin: 15px auto;
+            a {
+                display: block;
+            }
+            p {
+                display: none;
+            }
+        }
+        .icons {
+            margin-bottom: 30px;
+            width: 65px;
+            height: 65px;
+            @media only screen and (max-width:767px) {
+                margin: 20px auto;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .redSquare {
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+}
+
+section.joinUs {
+    @media only screen and (max-width:767px) {
+        overflow-x: hidden;
+        padding: 22px 0;
+    }
+    .row {
+        margin:0;
+        .teamImg {
+            position: relative;
+            padding: 0;
+        }
+        .joinInfo {
+            position: relative;
+            .position {
+                position: absolute;
+                top: 50%;
+                left: 4vw;
+                transform: translateY(-50%);
+                @media screen and (max-width: 767px){
+                    position: relative;
+                    top:auto;
+                    left: auto;
+                    transform: none;
+                    text-align: center;
+                }
+                h2 {
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                }
+            }
+            .socialOutline .singleSocial {
+                margin: 0 15px 0 0;
+            }
+        }
+    }
+}
+
+section.quotes {
+    @media only screen and (max-width: 767px){
+        margin-top: 170px;
+    }
+    .cls-1 {
+        fill: #e3e3e3;
+        opacity: 0.301;
+      }
+    .caroCont {
+        margin: auto;
+        .whiteBlock {
+            position: relative;
+            svg {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                width: 30%;
+            }
+            .carousel {
+                min-height: 200px;
+                .centerCar {
+                    position: relative;
+                    width: 100%;
+                    height: 275px;
+                    @media only screen and (max-width:1050px) {
+                        min-height: 360px;
+                    }
+                    @media only screen and (max-width:757px) {
+                        height: 100%;
+                        min-height: inherit;
+                        padding-bottom: 25px;
+                    }
+                    .carousel-inner {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 50;
+                        padding: 0 60px;
+                        text-align: left;
+                        overflow: inherit;
+                        @media only screen and (max-width:1050px) {
+                            padding: 0 30px;
+                        }
+                        @media only screen and (max-width:990px) {
+                            text-align: center;
+                        }
+                        @media only screen and (max-width:757px) {
+                            position: relative;
+                            top: auto;
+                            transform: none;
+                            padding: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-item {
+            position: relative;
+            .leftQuotes {
+                display: inline-block;
+                width: 70%;
+                padding-right: 20px;
+                h3.excerpt {
+                    font-size: 1.75rem;
+                    margin-bottom: 25px;
+                    @media only screen and (max-width:1200px) {
+                        font-size: 1.3rem;
+                        margin-bottom: 15px;
+                    }
+                }
+                p {
+                    @media only screen and (max-width:1200px) {
+                        font-size: 1.1rem;
+                    }
+                }
+                @media only screen and (max-width:990px) {
+                    width:100%;
+                    margin-top: 20px;
+                    padding-right: inherit;
+                }
+            }
+            .imgQuotes {
+                display: inline-block;
+                width: 28%;
+                vertical-align: top;
+                padding-left: 20px;
+                img {
+                    width:100%;
+                }
+                @media only screen and (max-width:990px) {
+                    position: absolute;
+                    top: -180px;
+                    left: 50%;
+                    width: 100%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    padding-left: inherit;
+                    img {
+                        max-width: 200px;
+                    }
+                }
+                @media only screen and (max-width:676px) {
+                    max-width: 125px;
+                    top: -105px;
+                }
+            }
+        }
+        h3.qName {
+            margin-top: 25px;
+            @media only screen and (max-width:1200px) {
+                margin-top: 15px;
+            }
+        }
+        p {
+            color:#999;
+        }
+        .carousel-control-next, .carousel-control-prev {
+            width:auto;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-image: none;
+            color: $cavistaRed;
+            height: auto;
+            width: 30px;
+            i {
+                font-size: 80px;
+            }
+        }
+        .carousel-control-prev {
+            left: -92px;
+            opacity: 1;
+            width: 40px;
+            @media only screen and (max-width:767px) {
+                left: -30px;
+            }
+        }
+        .carousel-control-next {
+            right: -92px;
+            opacity: 1;
+            width: 40px;
+            @media only screen and (max-width:767px) {
+                right: -30px;
+            }
+        }
+        .carousel-indicators {
+            bottom: -44px;
+            li {
+                width: 10px;
+                height: 10px;
+                border-radius: 30px;
+                opacity: 1;
+                border: 2px solid #ddd;
+                &.active {
+                    background-color:$cavistaRed;
+                    border: 2px solid $cavistaRed;
+                }
+            }
+            @media only screen and (max-width:767px) {
+                bottom: -14px;
+            }
+        }
+    }
+}

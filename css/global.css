@@ -1,0 +1,258 @@
+@charset "UTF-8";
+.row:before, .row:after {
+  display: inline-block;
+}
+
+body {
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  height: 100%;
+  color: #4E4E4E;
+  background-color: #F2F2F2;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+a {
+  color: #4E4E4E;
+}
+a:hover {
+  color: #4E4E4E;
+}
+
+/*Hero text only*/
+h1 {
+  font-size: 3.75rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Quicksand", "Helvetica Neue", "Helvetica", sans-serif;
+}
+@media screen and (max-width: 1020px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+/*Colored headers text*/
+h2 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  font-family: "Quicksand", "Helvetica Neue", "Helvetica", sans-serif;
+  color: #BB243E;
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+}
+
+nav {
+  font-family: "Quicksand", "Helvetica Neue", "Helvetica", sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  nav {
+    box-shadow: 7px 7px 17px rgba(0, 0, 0, 0.15);
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav .navbar-brand {
+    width: 200px;
+  }
+}
+nav .navbar-brand img {
+  width: 100%;
+  max-width: 200px;
+}
+nav .hamburger {
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  nav .hamburger {
+    display: block;
+  }
+}
+nav .hamburger:before {
+  content: "X";
+  font-size: 30px;
+  color: #BB243E;
+  text-align: center;
+  font-weight: bold;
+}
+nav .hamburger i {
+  font-size: 30px;
+  color: #BB243E;
+}
+nav .hamburger.collapsed:before {
+  content: "☰";
+}
+nav .navbar-nav .nav-item a.nav-link {
+  padding: 0px 35px;
+  border-right: 1px solid #BB243E;
+  color: #707070;
+}
+@media only screen and (max-width: 920px) {
+  nav .navbar-nav .nav-item a.nav-link {
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav .navbar-nav .nav-item a.nav-link {
+    border: none;
+    padding: 10px 0px;
+    text-align: center;
+  }
+}
+nav .navbar-nav .nav-item:last-child a.nav-link {
+  border: none;
+}
+@media only screen and (max-width: 767px) {
+  nav .navbar-nav .nav-item:first-child a.nav-link {
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }
+}
+nav .navButton {
+  display: inline-block;
+}
+nav .navButton a {
+  padding: 10px 27px;
+  background-color: #BB243E;
+  border-radius: 10px;
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  nav .navButton {
+    display: block;
+    margin: 10px auto 20px;
+    text-align: center;
+  }
+}
+
+.redBtn {
+  background-color: #BB243E;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 320px;
+  text-align: center;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .redBtn {
+    width: inherit;
+    display: inline-block;
+    padding: 10px 30px;
+  }
+}
+.redBtn a {
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.whiteBlock {
+  background-color: #fff;
+  box-shadow: 7px 7px 17px rgba(0, 0, 0, 0.15);
+  position: relative;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.redSquare-btmL {
+  position: absolute;
+  background-color: #BB243E;
+  bottom: -20px;
+  left: -20px;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+footer {
+  background-color: #2C2C2C;
+  color: #fff;
+  text-align: center;
+  padding: 35px 10px 30px;
+  border-top: 13px solid #BB243E;
+}
+footer .footer-links ul {
+  padding: 0;
+  margin-bottom: 23px;
+}
+footer .footer-links ul li {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+footer .footer-links ul li a.nav-link {
+  padding: 5px 20px;
+  border-right: 3px solid #BB243E;
+  color: #fff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  footer .footer-links ul li a.nav-link {
+    padding: 5px 5px;
+  }
+}
+footer .footer-links ul li:last-child a.nav-link {
+  border: none;
+}
+footer .singleSocial {
+  background-color: #BB243E;
+  border-radius: 10px;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  vertical-align: top;
+  position: relative;
+  margin: 15px;
+}
+@media only screen and (max-width: 500px) {
+  footer .singleSocial {
+    margin: 5px;
+  }
+}
+footer .singleSocial svg {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+footer .axxess {
+  margin: 30px auto;
+}
+footer .axxess img {
+  width: 80%;
+  max-width: 240px;
+  margin-left: -9px;
+}
+/*# sourceMappingURL=global.css.map */

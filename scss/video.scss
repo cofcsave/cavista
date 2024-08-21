@@ -1,0 +1,143 @@
+
+/* #Overlay for Popup Video
+================================================== */
+.vid {
+    cursor: pointer;
+}
+#overlay {
+  display:none;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,.5);
+  z-index: 1000;
+}
+#overlay .wrapper {
+  margin: 100px auto 0;
+  text-align: center;
+  width: 800px;
+}
+#overlay .window {
+  display: inline-block;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+      border-radius: 3px;
+  position: relative;
+
+  padding: 10px;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-image:    -moz-linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-image:      -o-linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-image:         linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-repeat: repeat-x;
+}
+#overlay .window .close-window {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+      border-radius: 50%;
+  background: #333;
+  background: rgba(0,0,0,.7);
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+}
+#overlay .wrapper .window .close-window:hover {
+  background: rgba(0,0,0,.5);
+}
+#overlay iframe {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+
+#overlay2 {
+  display:none;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,.5);
+  z-index: 1000;
+}
+#overlay2 .wrapper {
+  margin: 100px auto 0;
+  text-align: center;
+  width: 90%;
+}
+#overlay2 .window {
+  display: inline-block;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+      border-radius: 3px;
+  position: relative;
+
+  padding: 10px;
+  background: #ffffff;
+  background-image: -webkit-linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-image:    -moz-linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-image:      -o-linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-image:         linear-gradient(#ffffff 60%, #cccccc 80%);
+    background-repeat: repeat-x;
+}
+#overlay2 .window .close-window {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+      border-radius: 50%;
+  background: #333;
+  background: rgba(0,0,0,.7);
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 0px 1px black;
+}
+#overlay2 .wrapper .window .close-window:hover {
+  background: rgba(0,0,0,.5);
+}
+#overlay2 iframe {
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+
+.vid1{background-color:#b8223b; padding:5px; margin-bottom: 10px; border:#ddd 1px solid;
+  color:#fff;
+  font-size: 1.0em;
+  /*clear:both;
+  position: relative;*/
+  cursor: pointer;
+  display:none;
+}
+
+.vid1 a{color:#fff;}
+.vid1:visited{color: #fff;}

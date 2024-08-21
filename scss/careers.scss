@@ -1,0 +1,279 @@
+@import "global";
+
+section.hero {
+    .heroContent {
+        background-image: url('../images/team-careers.jpg');
+        background-position: 55% 29%;
+        .redHeroBlk {
+            top: auto;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 60%;
+            max-width: 900px;
+            padding: 35px 15px;
+            border-radius: 10px;
+            overflow:auto;
+            bottom: 40px;
+            text-align: center;
+            }
+    }
+}
+
+section.quotes {
+    @media only screen and (max-width: 767px){
+        margin-top: 170px;
+    }
+    .cls-1 {
+        fill: #e3e3e3;
+        opacity: 0.301;
+      }
+    .caroCont {
+        margin: auto;
+        .whiteBlock {
+            position: relative;
+            svg {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                width: 30%;
+            }
+            .carousel {
+                min-height: 200px;
+                .centerCar {
+                    position: relative;
+                    width: 100%;
+                    
+                    @media only screen and (max-width:1050px) {
+                        min-height: 360px;
+                    }
+                    @media only screen and (max-width:757px) {
+                        height: 100%;
+                        min-height: inherit;
+                        padding-bottom: 25px;
+                    }
+                    .carousel-inner {
+                        
+                        padding: 0 60px;
+                        text-align: left;
+                        overflow: inherit;
+                        @media only screen and (max-width:1050px) {
+                            padding: 0 30px;
+                        }
+                        @media only screen and (max-width:990px) {
+                            text-align: center;
+                        }
+                        @media only screen and (max-width:757px) {
+                            position: relative;
+                            top: auto;
+                            transform: none;
+                            padding: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-item {
+            position: relative;
+            .leftQuotes {
+                display: inline-block;
+                width: 70%;
+                padding-right: 20px;
+                h3.excerpt {
+                    font-size: 1.75rem;
+                    margin-bottom: 25px;
+                    @media only screen and (max-width:1200px) {
+                        font-size: 1.3rem;
+                        margin-bottom: 15px;
+                    }
+                }
+                p {
+                    @media only screen and (max-width:1200px) {
+                        font-size: 1.1rem;
+                    }
+                }
+                @media only screen and (max-width:990px) {
+                    width:100%;
+                    margin-top: 20px;
+                    padding-right: inherit;
+                }
+            }
+            .imgQuotes {
+                display: inline-block;
+                width: 28%;
+                vertical-align: top;
+                padding-left: 20px;
+                img {
+                    width:100%;
+                }
+                @media only screen and (max-width:990px) {
+                    position: absolute;
+                    top: -180px;
+                    left: 50%;
+                    width: 100%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    padding-left: inherit;
+                    img {
+                        max-width: 200px;
+                    }
+                }
+                @media only screen and (max-width:676px) {
+                    max-width: 125px;
+                    top: -105px;
+                }
+            }
+        }
+        h3.qName {
+            margin-top: 25px;
+            @media only screen and (max-width:1200px) {
+                margin-top: 15px;
+            }
+        }
+        p {
+            color:#999;
+        }
+        .carousel-control-next, .carousel-control-prev {
+            width:auto;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-image: none;
+            color: $cavistaRed;
+            height: auto;
+            width: 30px;
+            i {
+                font-size: 80px;
+            }
+        }
+        .carousel-control-prev {
+            left: -92px;
+            opacity: 1;
+            width: 40px;
+            @media only screen and (max-width:767px) {
+                left: -30px;
+            }
+        }
+        .carousel-control-next {
+            right: -92px;
+            opacity: 1;
+            width: 40px;
+            @media only screen and (max-width:767px) {
+                right: -30px;
+            }
+        }
+        .carousel-indicators {
+            bottom: -44px;
+            li {
+                width: 10px;
+                height: 10px;
+                border-radius: 30px;
+                opacity: 1;
+                border: 2px solid #ddd;
+                &.active {
+                    background-color:$cavistaRed;
+                    border: 2px solid $cavistaRed;
+                }
+            }
+            @media only screen and (max-width:767px) {
+                bottom: -14px;
+            }
+        }
+    }
+}
+
+section.perks {
+    margin-top:100px;
+    @media only screen and (max-width:767px) {
+        margin-top: 20px;
+    }
+    .header {
+        max-width: 1100px;
+        margin: 0 auto 50px;
+        .secondP {
+            margin-top: 20px;
+        }
+    }
+    .fourPerks {
+        margin-top: 100px;
+    }
+    .col-spacing {
+        margin: 40px auto;
+        text-align: center;
+        @media only screen and (max-width:767px) {
+            text-align: center;
+            margin: 15px auto;
+        }
+        .icons {
+            margin: 15px auto;
+            width: 65px;
+            height: 65px;
+            @media only screen and (max-width:767px) {
+                margin: 20px auto;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .redBtn {
+            margin:35px auto;
+    }
+    .socialOutline {
+        text-align: center;
+    }
+    @media only screen and (max-width:991px) {
+        margin-bottom: 200px;
+    }
+    @media only screen and (max-width:676px) {
+        margin-bottom: 150px;
+    }
+}
+
+section.howWeGrow {
+    .header h2 {
+        margin-bottom: 60px;
+        @media only screen and (max-width:767px) {
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+    }
+    .row {
+        div:nth-of-type(2), div:nth-of-type(1){
+            border-right: 1px solid rgb(126, 126, 126);
+            @media only screen and (max-width:992px) {
+                border:none;
+            }
+        }
+    }
+    .steps {
+        text-align: center;
+        padding: 20px 50px;
+        img {
+            max-width:100px;
+            margin:auto;
+            margin-bottom:50px;
+        }
+        h3:nth-of-type(2) {
+            margin-top:30px;
+        }
+    }
+}
+
+section.location {
+    .row {
+    text-align: left;
+        @media only screen and (max-width:575px) {
+            text-align: center;
+        }
+    }
+  img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: $shadow;
+  }
+  p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+}

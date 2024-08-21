@@ -1,0 +1,507 @@
+$break-tenforty:1040px;
+$maxWidth:1440px;
+
+$cavistaRed:#BB243E;
+
+$shadow:7px 7px 17px rgba(0, 0, 0, 0.15);
+
+
+//bootstrap Safari bug where columns in rows stack when they shouldn't
+.row:before, .row:after {
+        display: inline-block;
+    }
+
+
+body {
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    height: 100%;
+    color:#4E4E4E;
+    background-color:#F2F2F2;
+    font-family:  'Lato', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: $cavistaRed;
+}
+
+::selection {
+  color: #fff;
+  background: $cavistaRed;
+}
+
+
+.container {
+    max-width: $maxWidth;
+}
+
+a {
+    color:#4E4E4E;
+    &:hover {
+        color:#4E4E4E;
+    }
+}
+// Copy/Text Styles
+
+/*Hero text only*/
+h1 {
+    font-size: 3.75rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', sans-serif;
+    @media screen and (max-width: 967px) {
+        font-size:2.75rem;
+    }
+    @media screen and (max-width: 767px) {
+        font-size:2.2rem;
+        color:$cavistaRed;
+    }
+}
+
+/*Colored headers text*/
+h2 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+    font-weight: 400;
+    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', sans-serif;
+    color: $cavistaRed;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+        font-size:1.5rem;
+        line-height: 2.2rem;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    font-weight: 600;
+    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', sans-serif;
+    color: $cavistaRed;
+    text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+        font-size:1.1rem;
+        line-height: 1.6rem;
+    }
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+        font-size:1.1rem;
+        line-height: 1.6rem;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+nav {
+    font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', sans-serif;
+    @media only screen and (max-width:767px) {
+        box-shadow: $shadow;
+    }
+    .navbar-brand {
+        @media only screen and (max-width: 767px) {
+            width: 200px;
+        }
+        img {
+            width:100%;
+            max-width: 200px;
+        }
+    }
+    .hamburger {
+        cursor: pointer;
+        display: none;
+        @media only screen and (max-width:767px) {
+            display: block;
+        }
+        &:before {
+            content:"X";
+            font-size: 30px;
+            color: $cavistaRed;
+            text-align: center;
+            font-weight: bold;
+        }
+        i {
+            font-size: 30px;
+            color: $cavistaRed;
+        }
+        &.collapsed {
+            &:before {
+                content:"☰";
+            }
+        }
+    } 
+    .navbar-nav {
+        .nav-item {
+            position: relative;
+            a.nav-link {
+                padding: 0px 35px;
+                border-right: 1px solid $cavistaRed;
+                color: #707070;
+                @media only screen and (max-width:920px) {
+                     padding: 0px 20px;
+                }
+                 @media only screen and (max-width:767px) {
+                     border:none;
+                     padding: 10px 0px;
+                     text-align: center;
+                }
+                &.activeColor {
+                color: $cavistaRed;
+            }
+            }
+             &:last-child {
+                 a.nav-link {
+                    border:none;  
+                }
+            }
+            &:first-child {
+                @media only screen and (max-width:767px) {
+                 a.nav-link {
+                    border-top:1px solid #ddd;  
+                     margin-top: 10px;
+                }
+            }
+            }
+            .active {
+                width: 50px;
+                height: 2px;
+                background: #BB243E;
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+                    @media only screen and (max-width:767px) {
+                        display: none;
+                        }
+            }
+        }
+    }
+    .navButton {
+        display: inline-block;
+        a {
+            padding: 10px 27px;
+            background-color: $cavistaRed;
+            border-radius: 10px;
+            color: #fff;
+        }
+        @media only screen and (max-width:767px) {
+            display: block;
+            margin: 10px auto 20px;
+            text-align: center;
+        }
+    }
+}
+
+.mobileHero {
+    display: none;
+    text-align: center;
+    @media only screen and (max-width:767px){
+        display: block;
+        padding: 15px;
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .redBtn {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+        }
+        .redBtn.nextVid {
+            display: inline-block;
+            border:1px solid $cavistaRed;
+        }
+        .regularBtn {
+                display: inline-block;
+            padding: 10px 20px;
+            border:1px solid $cavistaRed;
+            border-radius: 10px;
+            margin-top: 25px;
+            background-color: transparent;
+            margin-right: 15px;
+            color:$cavistaRed;
+
+        }
+    }
+}
+section.hero {
+    padding:0;
+    margin: 0;
+    max-width: inherit;
+    .heroContent {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 40vw;
+        max-height: 730px;
+        width: 100%;
+        position: relative;
+        .redHeroBlk {
+            position: absolute;
+            top:50%;
+            left:0;
+            transform:translateY(-50%);
+            width: 60%;
+            max-width: 900px;
+            padding: 65px 15px;
+            border-radius: 0 10px 10px 0;
+            overflow: hidden;
+            @media only screen and (max-width:1440px) {
+                padding: 35px 15px;
+            }
+            @media only screen and (max-width:767px){
+                display: none;
+            }
+            .redContent {
+                width: 100%;
+                color:#fff;
+                margin:auto;
+                .btnOutline {
+                    display: inline-block;
+                    margin-right: 15px;
+                    a {
+                        padding: 10px 20px;
+                        color: #fff;
+                        border:1px solid #fff;
+                        border-radius: 5px;
+                        display: inline-block;
+                        margin-top: 25px;
+                    }
+                }
+                .hero-btn {
+                    display: inline-block;
+                    span {
+                        cursor: pointer;
+                        padding: 10px 20px;
+                        color: #fff;
+                        border-radius: 5px;
+                        display: inline-block;
+                        margin-top: 25px;
+                        background-color: #fff;
+                        color:$cavistaRed;
+                        border:1px solid #fff;
+                    }
+                }
+            }
+            .redBoxOpacity {
+                background-color: $cavistaRed;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: .85;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.whtBorder {
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 15px;
+    border-radius: 20px;
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    @media only screen and (max-width:767px) {
+        background-color: #fff;
+        box-shadow: $shadow;
+        padding: 0;
+        border-radius: 0;
+        img {
+            width: 112%;
+            margin-left: -20px;
+            border-radius: 0;
+        }
+    }
+}
+
+.redBtn {
+    background-color: $cavistaRed;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    margin: 35px 0;
+    @media only screen and (max-width:767px) {
+        width: inherit;
+        max-width: 320px;
+        display: block;
+        padding: 10px 30px;
+        margin: 35px auto;
+    }
+    a {
+        color: #fff;
+        text-align: center;
+    }
+}
+
+section {
+    position: relative;
+    max-width: $maxWidth;
+    margin: 150px auto;
+    padding: 0 40px;
+    @media only screen and (max-width:767px) {
+        padding: 0 15px;
+        margin: 6vw auto 11vw;
+    }
+    .header {
+        margin-bottom: 50px;
+    }
+}
+
+.whiteBlock {
+    background-color: #fff;
+    box-shadow: $shadow;
+    position: relative;
+    padding: 50px;
+    border-radius: 20px;
+    @media only screen and (max-width:767px) {
+        padding: 20px;
+    }
+}
+
+.redSquare {
+    position: absolute;
+    background-color: $cavistaRed;
+    width: 300px;
+    border-radius: 10px;
+    z-index: -1;
+    height: 300px;
+    @media only screen and (max-width:767px) {
+        width: 150px;
+        height: 150px;
+    }
+    &.btmL {
+        bottom: -20px;
+        left: -20px;
+    }
+    &.topR {
+        top: -20px;
+        right: -20px;
+    }
+    &.topL {
+        top: -20px;
+        left: -20px;
+    }
+}
+
+.redSquare-sm {
+    position: absolute;
+    background-color: $cavistaRed;
+    width: 100px;
+    border-radius: 10px;
+    z-index: 2;
+    height: 100px;
+    bottom: -20px;
+    right: -20px;
+    opacity: .8;
+}
+
+.socialOutline {
+    margin: 20px auto;
+        .singleSocial {
+        border: 3px solid $cavistaRed;
+        border-radius: 10px;
+        display: inline-block;
+        width:40px;
+        height: 40px;
+        vertical-align: top;
+        position: relative;
+        margin:0 7px;
+        @media only screen and (max-width:500px) {
+             margin:5px;
+        }
+        svg {
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform:translate(-50%, -50%);
+            max-height: 60%;
+            max-width: 60%;
+            path {
+            fill:$cavistaRed !important;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: #2C2C2C;
+    color:#fff;
+    text-align: center;
+    padding: 35px 10px 30px;
+    border-top: 13px solid $cavistaRed;
+    .footer-links {
+        ul {
+            padding: 0;
+            margin-bottom: 23px;
+            li {
+                list-style: none;
+                text-align: center;
+                display: inline-block;
+                a.nav-link {
+                    padding: 5px 20px;
+                    border-right: 3px solid $cavistaRed;
+                    color: #fff;
+                    cursor: pointer;
+                     @media only screen and (max-width:500px) {
+                         padding: 5px 7px;
+                    }
+                }
+                 &:last-child {
+                     a.nav-link {
+                        border:none;  
+                    }
+                }
+            }
+        }
+    }
+    .social-footer {
+        margin-bottom: 20px;
+    }
+    .singleSocial {
+        background-color: $cavistaRed;
+        border-radius: 10px;
+        display: inline-block;
+        width:55px;
+        height: 55px;
+        vertical-align: top;
+        position: relative;
+        margin: 15px;
+        @media only screen and (max-width:500px) {
+             margin:5px;
+        }
+        svg {
+            top:50%;
+            left:50%;
+            position: absolute;
+            transform:translate(-50%, -50%);
+        }
+    }
+    .axxess {
+        margin: 30px auto;
+        img {
+            width: 80%;
+            max-width: 240px;
+            margin-left: -9px;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import "global";
+
+section.hero {
+    .heroContent {
+        background-image: url('../images/about-hero.jpg');
+        background-position: 55% 29%;
+        @media only screen and (max-width:767px){
+            background-position: 100% 29%;
+            background-size: 150%;
+        }
+        h1 {
+        text-align: center;
+        }
+    }
+}
+
+section.about {
+    margin-top:40px;
+    .redBtn {
+      margin: 35px auto;
+      }
+      .header {
+      h2 {
+        margin-bottom: 30px;
+        margin-top: 10px;
+          @media only screen and (max-width:767px) {
+               margin-bottom: 10px;
+          }
+      }
+    }
+    .col-spacing {
+        margin: 40px auto;
+        a {
+            display: none;
+        }
+        @media only screen and (max-width:767px) {
+            text-align: center;
+            margin: 15px auto;
+            a {
+                display: block;
+            }
+            p {
+                display: none;
+            }
+        }
+        .icons {
+            margin-bottom: 30px;
+            width: 65px;
+            height: 65px;
+            @media only screen and (max-width:767px) {
+                margin: 20px auto;
+            }
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+    .redSquare {
+        @media screen and (max-width: 767px){
+            display: none;
+        }
+    }
+}
+
+section.ourPeople {
+    @media only screen and (max-width:991px) {
+        overflow-x: hidden;
+        padding: 22px 0;
+    }
+    .row {
+        margin:0;
+        .teamImg {
+            position: relative;
+            padding: 0;
+        }
+        .joinInfo {
+            position: relative;
+            .position {
+                position: absolute;
+                top: 50%;
+                left: 4vw;
+                transform: translateY(-50%);
+                @media screen and (max-width: 991px){
+                    position: relative;
+                    top:auto;
+                    left: auto;
+                    transform: none;
+                    text-align: center;
+                }
+                h2 {
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+section.ourWork {
+    @media only screen and (max-width:991px) {
+        overflow-x: hidden;
+        padding: 22px 0;
+    }
+    .row {
+        margin:0;
+        .teamImg {
+            position: relative;
+            padding: 0;
+        }
+        .joinInfo {
+            position: relative;
+            .position {
+                position: absolute;
+                top: 50%;
+                right: 4vw;
+                transform: translateY(-50%);
+                @media screen and (max-width: 991px){
+                    position: relative;
+                    top:auto;
+                    right: auto;
+                    transform: none;
+                    text-align: center;
+                }
+                h2 {
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
